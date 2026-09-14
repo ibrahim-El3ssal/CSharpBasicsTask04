@@ -23,7 +23,20 @@
             Console.WriteLine(shelfCopies[1, 0]);
             #endregion
 
+            #region Question 03  
+            // 3 - Write a method called PrintWelcomeMessage that takes no parameters and prints "Welcome to the Library!". Call it from Main.
+            Console.WriteLine("\nQuestion03 : ");
+            PrintWelcomeMessage();
+            #endregion
 
+        }
+
+        //               Methods Declaration Outside Main Function
+
+        /// Question 03: 
+        static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the Library!");
         }
     }
 }
