@@ -121,6 +121,15 @@
 
             PrintBookInfo(pages: 400, title: "Book03");
             #endregion
+
+            #region Question 12
+            //4 - Write a method PrintAllTitles(params string[] titles) that prints each title on its own line.
+            // Call it with three book titles. 
+            Console.WriteLine("\nQuestion12 : ");
+
+            PrintAllTitles("Book01", "Book02", "Book03");
+            #endregion
+
         }
 
         //               Methods Declaration Outside Main Function
@@ -182,6 +191,15 @@
             Console.WriteLine($"{title} , {pages}");
         }
 
+        /// Question 12
+        static void PrintAllTitles(params string[] titles)
+        {
+            foreach (var item in titles)
+            {
+                Console.WriteLine($"{item}");
+            }
+        }
+   
     }
 
 
