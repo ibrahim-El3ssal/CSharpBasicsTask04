@@ -35,6 +35,19 @@
             PrintBookTitle("Clean Code");
             #endregion
 
+            #region Question 05  
+            // 5-Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+            // int pages = 400; and print pages afterward. What do you expect to see, and why?
+            Console.WriteLine("\nQuestion05 : ");
+            int pages = 400;
+            Console.WriteLine($"Before Method: {pages}"); //  400
+            AddBonusPages(pages);                         // 450
+            Console.WriteLine($"After Method: {pages}");  // 400
+
+            // passing Parameter by value (Value Type )
+            // take copy of frame to method and change on this frame only , original value of pages not change 
+
+            #endregion
         }
 
         //               Methods Declaration Outside Main Function
@@ -50,7 +63,11 @@
         {
             Console.WriteLine("Book title: " + title);
         }
-
+        /// Question 05: 
+        static void AddBonusPages(int pages)
+        {
+            Console.WriteLine($"inside Method: {pages + 50}");
+        }
     }
 
 
