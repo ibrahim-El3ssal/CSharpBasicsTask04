@@ -75,6 +75,18 @@
             // take ref of value in stack to method and change on original value in stack
             #endregion
 
+            #region Question 08  
+            // 8 - Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a
+            //new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length afterward.
+            Console.WriteLine("\nQuestion08 : ");
+            double[] OldPrices = { 25.5, 40.0 };
+            Console.WriteLine($"Before Method: {OldPrices.Length}"); //  2
+            ReplaceArray(ref OldPrices);
+            Console.WriteLine($"After Method: {OldPrices.Length}"); //  3
+
+            // passing Parameter by Refernce  (Refernce Type )
+            // take ref of address in stack to array in heap and change add new array to address also don't pointer to old array 
+            #endregion
         }
 
         //               Methods Declaration Outside Main Function
@@ -109,6 +121,12 @@
             pages += 50;
             Console.WriteLine($"inside Method: {pages}");
         }
+        /// Question 08:
+        static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
+        }
+
     }
 
 
