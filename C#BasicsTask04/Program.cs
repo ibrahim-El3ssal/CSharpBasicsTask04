@@ -61,6 +61,20 @@
             // passing Parameter by value (Refernce Type )
             // take copy of address value in heap to method and change on original value of array heap
             #endregion
+
+            #region Question 07 
+            //7 - Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+            //Call it and print pages afterward. How is the result different from question 5 ?
+            Console.WriteLine("\nQuestion07 : ");
+            int pages2 = 400;
+            Console.WriteLine($"Before Method: {pages2}"); //  400
+            AddBonusPagesByRef(ref pages2);                         // 450
+            Console.WriteLine($"After Method: {pages2}");  // 450
+
+            // passing Parameter by Refernce  (value Type )
+            // take ref of value in stack to method and change on original value in stack
+            #endregion
+
         }
 
         //               Methods Declaration Outside Main Function
@@ -87,6 +101,13 @@
         {
             prices[0] -= 5;
             Console.WriteLine(prices[0]);
+        }
+
+        /// Question 07: 
+        static void AddBonusPagesByRef(ref int pages)
+        {
+            pages += 50;
+            Console.WriteLine($"inside Method: {pages}");
         }
     }
 
