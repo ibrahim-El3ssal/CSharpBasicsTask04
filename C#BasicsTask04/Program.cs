@@ -87,6 +87,22 @@
             // passing Parameter by Refernce  (Refernce Type )
             // take ref of address in stack to array in heap and change add new array to address also don't pointer to old array 
             #endregion
+
+            #region Question 09 
+            // 1 - Write a method bool TryGetPrice(string title, out double price) that returns
+            //true and sets price to 25.5 if title is "Clean Code", otherwise returns false and
+            //sets price to 0.Call it and print the price if found
+            Console.WriteLine("\nQuestion09 : ");
+
+            if (TryGetPrice("Clean Code", out double price))
+            {
+                Console.WriteLine($"Price Found: {price}"); // 25.5
+            }
+            else
+            {
+                Console.WriteLine("Price Not Found!");
+            }
+            #endregion
         }
 
         //               Methods Declaration Outside Main Function
@@ -125,6 +141,21 @@
         static void ReplaceArray(ref double[] prices)
         {
             prices = new double[] { 10.0, 12.5, 15.0 };
+        }
+
+        ///Question 09 
+        static bool TryGetPrice(string title, out double price)
+        {
+            if (title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+            else
+            {
+                price = 0;
+                return false;
+            }
         }
 
     }
