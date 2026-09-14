@@ -130,6 +130,17 @@
             PrintAllTitles("Book01", "Book02", "Book03");
             #endregion
 
+            #region Question 13
+            // 1-Add a private string password = "secret"; field to a Book class. Try to 
+            // print it from Main  (outside the class). What happens, and why?
+            Console.WriteLine("\nQuestion13 : ");
+
+            Book book = new Book();
+            //Console.WriteLine(book.password);
+
+            //Book.password is inaccessible due to its protection level
+            // can not print here because scope level of access modifier 
+            #endregion
         }
 
         //               Methods Declaration Outside Main Function
