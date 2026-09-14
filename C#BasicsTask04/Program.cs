@@ -48,6 +48,19 @@
             // take copy of frame to method and change on this frame only , original value of pages not change 
 
             #endregion
+
+            #region Question 06  
+            // 6 - Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it
+            // with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward. What do you expect to see, and why?
+            Console.WriteLine("\nQuestion06 : ");
+            double[] bookPrices = { 25.5, 40.0 };
+            Console.WriteLine($"Before Method: {bookPrices[0]}"); //  25.5
+            ApplyDiscount(bookPrices);                           //  20.5
+            Console.WriteLine($"After Method: {bookPrices[0]}");  //  20.5
+
+            // passing Parameter by value (Refernce Type )
+            // take copy of address value in heap to method and change on original value of array heap
+            #endregion
         }
 
         //               Methods Declaration Outside Main Function
@@ -67,6 +80,13 @@
         static void AddBonusPages(int pages)
         {
             Console.WriteLine($"inside Method: {pages + 50}");
+        }
+
+        /// Question 06: 
+        static void ApplyDiscount(double[] prices)
+        {
+            prices[0] -= 5;
+            Console.WriteLine(prices[0]);
         }
     }
 
