@@ -29,6 +29,12 @@
             PrintWelcomeMessage();
             #endregion
 
+            #region Question 04 
+            // 4 - Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with "Clean Code".
+            Console.WriteLine("\nQuestion04 : ");
+            PrintBookTitle("Clean Code");
+            #endregion
+
         }
 
         //               Methods Declaration Outside Main Function
@@ -38,5 +44,14 @@
         {
             Console.WriteLine("Welcome to the Library!");
         }
+
+        /// Question 04: 
+        static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " + title);
+        }
+
     }
+
+
 }
