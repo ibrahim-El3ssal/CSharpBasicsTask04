@@ -1,4 +1,6 @@
-﻿namespace C_BasicsTask04
+﻿using System.Numerics;
+
+namespace C_BasicsTask04
 {
     internal class Program
     {
@@ -138,9 +140,20 @@
             Book book = new Book();
             //Console.WriteLine(book.password);
 
-            //Book.password is inaccessible due to its protection level
-            // can not print here because scope level of access modifier 
+            ///Book.password is inaccessible due to its protection level
+            /// can not print here because scope level of access modifier 
             #endregion
+
+            #region Question 14
+            //2 - Add an internal int copiesInStock = 5; field to Book.Print it from Main.  Does it compile? Why?
+            Console.WriteLine("\nQuestion14 : ");
+
+            Console.WriteLine(book.copiesInStock);
+            /// Can compile create new object from Book Class and print copiesInStock with new object
+
+            #endregion
+            // Pause screen execution
+            Console.ReadLine();
         }
 
         //               Methods Declaration Outside Main Function
