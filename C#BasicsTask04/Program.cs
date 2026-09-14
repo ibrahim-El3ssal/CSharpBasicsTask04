@@ -103,6 +103,16 @@
                 Console.WriteLine("Price Not Found!");
             }
             #endregion
+
+            #region Question 10
+            //2 - Write a method PrintBookInfo(string title, int pages = 300) where pages is
+            //optional.Call it once with only a title, and once passing both a title and pages.
+            Console.WriteLine("\nQuestion10 : ");
+
+            PrintBookInfo("Book01");
+            PrintBookInfo("Book02", 200);
+
+            #endregion
         }
 
         //               Methods Declaration Outside Main Function
@@ -158,6 +168,11 @@
             }
         }
 
+        ///Question 10 
+        static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"{title} , {pages}");
+        }
     }
 
 
