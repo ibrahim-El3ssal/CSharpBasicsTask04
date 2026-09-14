@@ -152,6 +152,16 @@ namespace C_BasicsTask04
             /// Can compile create new object from Book Class and print copiesInStock with new object
 
             #endregion
+
+            #region Question 15
+            //3-Add a public string Title; field to Book. Set it and print it from Main.  
+            Console.WriteLine("\nQuestion15 : ");
+
+            book.Title = "C#";
+            Console.WriteLine(book.Title);
+            #endregion
+
+
             // Pause screen execution
             Console.ReadLine();
         }
